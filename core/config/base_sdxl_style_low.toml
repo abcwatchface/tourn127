@@ -34,9 +34,9 @@ max_train_steps = 1
 min_bucket_reso = 256
 min_snr_gamma = 7
 mixed_precision = "bf16"
-network_alpha = 32
-network_args = []
-network_dim = 32
+network_alpha = 16
+network_args = ["conv_dim=4", "conv_alpha=4", "dropout=null"]
+network_dim = 16
 network_module = "networks.lora"
 no_half_vae = true
 noise_offset_type = "Original"
